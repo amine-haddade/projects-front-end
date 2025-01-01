@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400&family=Exo+2:wght@500&family=Fredoka:wght@300..700&family=Livvic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Tajawal:wght@200;300;400;500;700;800;900&family=Unbounded:wght@200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" ,sans-serif;
+}
+body{
+    background-color :#0d6efd;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.homme{
+    width: 50%;
+    height: 65%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.homme header{
+    font-size: 22px;
+    font-weight: 600;
+    height: 15%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.homme form{
+    width: 100%;
+    height: 85%;
+}
+.homme form .ligne{
+    height: calc(100%/4);
+    display: flex;
+    width: 100%;
+    padding: 0px 20px;
+    column-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.homme form .ligne .filed,.message{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    color: #bfbfbf;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(152, 152, 152);
+    height: 50%;
+    outline: none;
+    border-radius: 5px;
+    flex-direction: row-reverse;
+}
+.homme form .ligne .filed input{
+    width: 90%;
+    height: 90%;
+    padding-left: 18px;
+    border: none;
+    outline: none;
+    font-size: 18px
+}
+.homme form .ligne .filed input:focus.filed{
+    border:2px solid #0d6efd;
+}
+.homme form .ligne .filed input:focus ~ i{
+    color: #0d6efd;
+}
+#message{
+    width: 100%;
+    height: 25%;
+    border: none;
+    padding-right:  18px;
+    padding-left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#message textarea:focus ~ i{
+    color: #0d6efd;
+}
+#message textarea{
+    width: 100%;
+    padding: 0px 35px;
+    height: 100%;
+    font-size: 18px
+}
+form #sub{
+    height: 60px;
+}
+form #sub input{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    background-color: #0d6efd;
+}
+form #message i{
+    position:relative;
+    bottom: 34px;
+    left: 20px;
+}
+@media screen and (max-width:1200px) {
+    .homme{
+        width: 62%;
+    }
+    
+}
+@media screen and (max-width:870px) {
+    .homme{
+        width: 72%;
+    }
+    
+}
+@media screen and (max-width:650px) {
+    .homme{
+        width: 70%;
+        height: 75%;
+    }
+    .homme form .ligne{
+        flex-direction: column;
+        margin:5px 0px 10px 0px;
+    }
+    form #sub input{
+        width: 100%;
+    }
+    .homme form .ligne .filed{
+        height: 45%;
+        margin-top: 0px;
+    }
+    .homme form .ligne .filed input{
+        height: 90%;
+        margin-top: 0px;
+    }
+    
+}

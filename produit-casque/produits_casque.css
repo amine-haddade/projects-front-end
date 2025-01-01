@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(20, 17, 17);
+    height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+
+    background-image: url(../img/wave-haikei.png);
+    background-repeat: no-repeat;
+}
+.content{
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius:20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin:auto;
+    width: 80%;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+nav .logo{
+    text-decoration: none;
+    color: antiquewhite;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 28px;
+    text-shadow: 2px 3px 5px rgb(34, 255, 0);
+    font-weight: 700;
+}
+nav ul li a{
+    text-decoration: none;
+    color: bisque;
+    font-size: large;
+    display: flex;
+    margin: 0 5px;
+}
+
+nav ul li a:hover{
+    color: red;
+    text-shadow: 3px 2px 6px white;
+}
+section .main{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 100%;
+    width: 80%;
+    margin: 25px auto; 
+}
+.main h1{
+    color: blanchedalmond;
+    text-transform: uppercase;
+    width: 40%;
+    letter-spacing: 3px;
+    padding-left: 15px;
+    
+}
+.main img{
+    width: 40%;
+    height: auto;
+   
+
+}
+.main h1:hover{
+    text-shadow: 2px 3px 5px rgb(255, 0, 200);
+}
+.main img:hover{
+    filter: drop-shadow(0px 0px 10px
+    rgb(255, 255, 255));
+}
+@media (max-width:1267px) and (min-width:1080px){
+    section .main{
+        margin: 80px auto;
+    }
+}
+@media (max-width:1080px) and (min-width:1050px){
+    section .main{
+        margin: 100px auto;
+    }
+}
+@media (max-width:1050px) and (min-width:700px){
+    section .main{
+        margin-top: 100px;
+        margin-left: 50px;
+        
+     
+        width: 90%;
+
+    }
+    .main h1{
+        width: 60%;
+        height: auto;
+}
+}
+@media (max-width:700px){
+    section .main{
+        flex-direction:column;
+        justify-content: center;
+        margin-top: 80px;
+
+    }
+    .main h1,.main img{
+        width: 80%;
+    }
+    h1{
+        font-size: large;
+    }
+    nav{
+        width:100%;
+       
+        flex-direction: column;
+        justify-content: center;
+    }
+       
+}
+@media (max-width:432px){
+    section .main{
+        flex-direction:column;
+        justify-content: center;
+        margin-top: 30%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    section{
+        width: 100%;
+        display: grid;
+        place-items: center;
+    
+        
+    }
+    h1{
+        margin-left: 25px;
+        font-size: larger;
+    }
+    nav{
+        width:100%;
+       
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
+        padding: 20px aut;
+    }
+        
+}

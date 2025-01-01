@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.profil-cart{
+    max-width: 370px;
+    width: 100%;
+    box-shadow: 0px 5px 10px rgba(0,0,0, 0.1);
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+
+}
+.profil-cart::before{
+    height: 33%;
+    width: 100%;
+    position: absolute;
+    content: "";
+    border-radius: 24px 24px 0px 0px;
+    top: 0;
+    left: 0;
+    background-color: #4070f4;
+}
+.image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #080807;
+    padding: 3px;
+    margin-top: 50px;
+
+    
+}
+.image .fot{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profil-cart .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-data .name{
+    font-size: 27px;
+    font-weight: 600;
+}
+.text-data .ana{
+    font-size: 19px;
+    font-weight: 500;
+}
+.profil-cart .media{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.profil-cart .link{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 8px;
+    text-decoration: none;
+
+}
+.profil-cart .button{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+.button .botona{
+    padding: 10px 15px;
+    background-color: #4070f4;
+    border-radius: 20px;
+    color: #fff;
+    font-weight:500;
+    font-size: 14px;
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+}
+.button .botona:hover{
+    background-color: #1347d6;
+}
+.pro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+
+    
+}
+.profil-cart .lang{
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 19px;
+    text-decoration: none;
+    color: #0307e1;
+    border-radius: 50%;
+    
+  
+}
+.skils{
+    display:flex ;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.skils .ato{
+    font-size: 30px;
+    font-weight: 500;
+    font-family:  Georgia, serif;
+
+}
+
+
+

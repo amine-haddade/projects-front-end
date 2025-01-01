@@ -1,0 +1,66 @@
+:root{
+    --primarycolor1:#ff274b;
+    --primarycolor2:#f7bcf7;
+    --primarycolor3:#ffffff;
+    --bagcolor1:#171a1c;
+    --bagcolor2:#22282a;
+    --pading:8%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.homme{
+    background-color:  var(--bagcolor1);
+    width: 100%;
+    height:200vh;
+    color: #ffffff;
+}
+nav>h1{
+    font-size: 40px;
+}
+nav span{
+    color:#ff274b;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    border-radius: 20px; 
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #09b5e4;
+
+    
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--primarycolor3);
+    transition: 0.4s;
+    font-size: 17px;
+}
+nav ul li a:hover{
+    color: var(--primarycolor1);
+}
+nav .botona{
+    text-decoration: none;
+    color: var(--primarycolor3);
+    background-color: var(--primarycolor1);
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: #ff274b solid 3px;
+    transition: 0.4s;
+}
+nav .botona:hover{
+    background-color: transparent;
+}
+
+

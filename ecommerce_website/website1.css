@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+
+}
+.navbar .logo img{
+    height: 70;
+    width: 200px;
+}
+.navbar nav{
+    flex: 1;
+    text-align: right;
+}
+.navbar nav ul{
+    list-style-type: none;
+}
+.navbar nav ul {
+    display: flex;
+    float: right;
+    
+}
+.navbar nav ul li {
+    margin-right: 20px;
+}
+.navbar nav ul li a{
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 17px;
+    transition: 0.5s;
+}
+.navbar nav ul li a:hover{
+    color: deeppink;
+}
+.header{
+    max-width: 100%;
+    height: 100vh;
+    background:radial-gradient(#fff,#ffd6d6);
+    padding: 0px 30px;
+    margin: auto;
+    font-family: 'Rubik', sans-serif;
+}
+.header .page1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header .page1 .col1{
+    width: 50%;
+}
+.header .page1 .col2{
+    width: 50%;
+    float: right;
+}
+.header .page1 .col2 img{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    padding-left: 80px;
+    padding-bottom: 0px;
+}
+.header .page1 .col1 h1{
+    font-size: 70px;
+    margin: 25px 0px;
+    text-transform: capitalize;
+}
+.header .page1 .col1 p{
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.header .page1 .col1 .botona{
+    padding: 12px 45px ;
+    background-color: blueviolet;
+    
+    border-radius: 20px;
+    text-decoration: none;
+    color: antiquewhite;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.header .page1 .col1 .botona:hover{
+    background-color:dimgray
+}
+.categorer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    height: max-content;
+    
+    
+}
+.categorer .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.categorer .row .col1{
+    width: calc(90%/3);
+}
+.categorer .row .col1 img{
+    width: 100%;
+    border-radius: 5px;
+}
+.categorer .featured>h1{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(105, 103, 103);
+    margin-bottom: 40px;
+    text-align: center;
+    display: block;
+    line-height: 80px;
+    position: relative;
+}
+.categorer .featured>h1::after{
+    content: '';
+    background-color: #ff6200;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.categorer .featured{
+    width: 100%;
+    height: max-content;
+    margin-bottom: 80px
+}
+.categorer .featured .cart .col{
+    width:calc(80%/4);
+    transition: 0.6s;
+    border-radius: 10px;
+
+}
+.categorer .featured .cart .col:hover{
+    transform: scale(1.2);
+}
+.categorer .featured .cart .col .start{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+.categorer .featured .cart{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+.categorer .featured .cart .col span{
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    color: dimgray;
+}
+.categorer .featured .cart .col .prix{
+    width: 100%;
+    margin-top: 8px;
+    font-size: 25px;
+}
+.categorer .featured .cart .col .prix i{
+    position: relative;
+    top: 3px;
+}
+.categorer .featured h2{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(64, 64, 64);
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+    line-height:80px;
+}
+.categorer .featured h2::after{
+    content:'';
+    width:70px;
+    height: 5px;
+    background-color: #ff6200;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
